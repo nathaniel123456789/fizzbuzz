@@ -4,10 +4,20 @@ public class fizzbuzz { //2 if else, 1 else
         double c;
     
         for (int a = 1; a <= 100 ; a++) {
-            b = a / 3;  c = a / 5;
-                if (b == (a) b && k == (a) c) {
-                    System.out.println(b)
+            b = (double) a / 3; 
+            c = (double) a / 5;
+            if (b == Math.round(b) && c == Math.round(c)) {
+                System.out.println("fizzbuzz");
                 }
+            else if (b == Math.round(b)) {
+                System.out.println("fizz");
+                }
+            else if (c == Math.round(c)) {
+                System.out.println("buzz");
+                }
+            else {
+                System.out.println(a);
+            }
         }
     }
 }
